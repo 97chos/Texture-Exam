@@ -14,9 +14,9 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "854BEFA1E34AF7E00F1775F58368E530"
-               BuildableName = "AsyncDisplayKit.framework"
-               BlueprintName = "AsyncDisplayKit"
+               BlueprintIdentifier = "01738D47588FB9162B78CB9B4906E004"
+               BuildableName = "Pods-TextureExamTests.framework"
+               BlueprintName = "Pods-TextureExamTests"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

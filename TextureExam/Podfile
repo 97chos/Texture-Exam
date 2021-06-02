@@ -1,20 +1,21 @@
 # Uncomment the next line to define a global platform for your project
 # platform :ios, '9.0'
 
-target 'TextureExam (iOS)' do
+target 'TextureExam' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
  pod 'AsyncDisplayKit'
 
-  # Pods for TextureExam (iOS)
+  # Pods for TextureExam
 
-end
+  target 'TextureExamTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
 
-target 'TextureExam (macOS)' do
-  # Comment the next line if you don't want to use dynamic frameworks
-  use_frameworks!
-
-  # Pods for TextureExam (macOS)
+  target 'TextureExamUITests' do
+    # Pods for testing
+  end
 
 end

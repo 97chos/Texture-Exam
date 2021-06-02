@@ -1,6 +1,0 @@
-framework module Pods_TextureExam__iOS_ {
-  umbrella header "Pods-TextureExam (iOS)-umbrella.h"
-
-  export *
-  module * { export * }
-}

@@ -3,288 +3,256 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7343889957EA8501374115DA /* Pods_TextureExam__iOS_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52A851B9905C838D788DF470 /* Pods_TextureExam__iOS_.framework */; };
-		7EEDFE0C2667844900C20F27 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EEDFE0B2667844900C20F27 /* Tests_iOS.swift */; };
-		7EEDFE172667844900C20F27 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EEDFE162667844900C20F27 /* Tests_macOS.swift */; };
-		7EEDFE192667844900C20F27 /* TextureExamApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EEDFDF02667844800C20F27 /* TextureExamApp.swift */; };
-		7EEDFE1A2667844900C20F27 /* TextureExamApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EEDFDF02667844800C20F27 /* TextureExamApp.swift */; };
-		7EEDFE1B2667844900C20F27 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EEDFDF12667844800C20F27 /* ContentView.swift */; };
-		7EEDFE1C2667844900C20F27 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EEDFDF12667844800C20F27 /* ContentView.swift */; };
-		7EEDFE1D2667844900C20F27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EEDFDF22667844900C20F27 /* Assets.xcassets */; };
-		7EEDFE1E2667844900C20F27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EEDFDF22667844900C20F27 /* Assets.xcassets */; };
-		FEAC15FC57C8F368532628A5 /* Pods_TextureExam__macOS_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E17908C948B834A10CE8E80B /* Pods_TextureExam__macOS_.framework */; };
+		25DBD68799FD13D7780FB875 /* Pods_TextureExam_TextureExamUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9326494F8E9E8C6F5993C7F /* Pods_TextureExam_TextureExamUITests.framework */; };
+		7EEDFE952667B1D000C20F27 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EEDFE942667B1D000C20F27 /* AppDelegate.swift */; };
+		7EEDFE972667B1D000C20F27 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EEDFE962667B1D000C20F27 /* SceneDelegate.swift */; };
+		7EEDFE992667B1D000C20F27 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EEDFE982667B1D000C20F27 /* ViewController.swift */; };
+		7EEDFE9C2667B1D000C20F27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EEDFE9A2667B1D000C20F27 /* Main.storyboard */; };
+		7EEDFE9E2667B1D200C20F27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EEDFE9D2667B1D200C20F27 /* Assets.xcassets */; };
+		7EEDFEA12667B1D200C20F27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EEDFE9F2667B1D200C20F27 /* LaunchScreen.storyboard */; };
+		7EEDFEAC2667B1D200C20F27 /* TextureExamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EEDFEAB2667B1D200C20F27 /* TextureExamTests.swift */; };
+		7EEDFEB72667B1D200C20F27 /* TextureExamUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EEDFEB62667B1D200C20F27 /* TextureExamUITests.swift */; };
+		9575C39FAFD720B369D21FDF /* Pods_TextureExam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC55A7837674CE2EFA8A3874 /* Pods_TextureExam.framework */; };
+		A5955BA9B02BA3F71775E8DF /* Pods_TextureExamTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAF7D987131DB7285EEA1BCB /* Pods_TextureExamTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		7EEDFE082667844900C20F27 /* PBXContainerItemProxy */ = {
+		7EEDFEA82667B1D200C20F27 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 7EEDFDEB2667844800C20F27 /* Project object */;
+			containerPortal = 7EEDFE892667B1D000C20F27 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 7EEDFDF62667844900C20F27;
-			remoteInfo = "TextureExam (iOS)";
+			remoteGlobalIDString = 7EEDFE902667B1D000C20F27;
+			remoteInfo = TextureExam;
 		};
-		7EEDFE132667844900C20F27 /* PBXContainerItemProxy */ = {
+		7EEDFEB32667B1D200C20F27 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 7EEDFDEB2667844800C20F27 /* Project object */;
+			containerPortal = 7EEDFE892667B1D000C20F27 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 7EEDFDFE2667844900C20F27;
-			remoteInfo = "TextureExam (macOS)";
+			remoteGlobalIDString = 7EEDFE902667B1D000C20F27;
+			remoteInfo = TextureExam;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		52A851B9905C838D788DF470 /* Pods_TextureExam__iOS_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TextureExam__iOS_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5A150A0DA03FCD87A1A06160 /* Pods-TextureExam (macOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextureExam (macOS).debug.xcconfig"; path = "Target Support Files/Pods-TextureExam (macOS)/Pods-TextureExam (macOS).debug.xcconfig"; sourceTree = "<group>"; };
-		7EEDFDF02667844800C20F27 /* TextureExamApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextureExamApp.swift; sourceTree = "<group>"; };
-		7EEDFDF12667844800C20F27 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		7EEDFDF22667844900C20F27 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		7EEDFDF72667844900C20F27 /* TextureExam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextureExam.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		7EEDFDFA2667844900C20F27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7EEDFDFF2667844900C20F27 /* TextureExam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextureExam.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		7EEDFE012667844900C20F27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7EEDFE022667844900C20F27 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
-		7EEDFE072667844900C20F27 /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7EEDFE0B2667844900C20F27 /* Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOS.swift; sourceTree = "<group>"; };
-		7EEDFE0D2667844900C20F27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7EEDFE122667844900C20F27 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7EEDFE162667844900C20F27 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
-		7EEDFE182667844900C20F27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BA86A8383E0C401EE0F140CC /* Pods-TextureExam (iOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextureExam (iOS).release.xcconfig"; path = "Target Support Files/Pods-TextureExam (iOS)/Pods-TextureExam (iOS).release.xcconfig"; sourceTree = "<group>"; };
-		CC3C4BED573C078D2D09A9C7 /* Pods-TextureExam (macOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextureExam (macOS).release.xcconfig"; path = "Target Support Files/Pods-TextureExam (macOS)/Pods-TextureExam (macOS).release.xcconfig"; sourceTree = "<group>"; };
-		E17908C948B834A10CE8E80B /* Pods_TextureExam__macOS_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TextureExam__macOS_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FA4973F14CC23DBD490CFEC0 /* Pods-TextureExam (iOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextureExam (iOS).debug.xcconfig"; path = "Target Support Files/Pods-TextureExam (iOS)/Pods-TextureExam (iOS).debug.xcconfig"; sourceTree = "<group>"; };
+		3B67E3A8CD0413FF4C9CFAB5 /* Pods-TextureExamTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextureExamTests.release.xcconfig"; path = "Target Support Files/Pods-TextureExamTests/Pods-TextureExamTests.release.xcconfig"; sourceTree = "<group>"; };
+		5E9BFA1E932D344929C800EE /* Pods-TextureExam-TextureExamUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextureExam-TextureExamUITests.debug.xcconfig"; path = "Target Support Files/Pods-TextureExam-TextureExamUITests/Pods-TextureExam-TextureExamUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7EEDFE912667B1D000C20F27 /* TextureExam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextureExam.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EEDFE942667B1D000C20F27 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7EEDFE962667B1D000C20F27 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		7EEDFE982667B1D000C20F27 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7EEDFE9B2667B1D000C20F27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7EEDFE9D2667B1D200C20F27 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7EEDFEA02667B1D200C20F27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7EEDFEA22667B1D200C20F27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7EEDFEA72667B1D200C20F27 /* TextureExamTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TextureExamTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EEDFEAB2667B1D200C20F27 /* TextureExamTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextureExamTests.swift; sourceTree = "<group>"; };
+		7EEDFEAD2667B1D200C20F27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7EEDFEB22667B1D200C20F27 /* TextureExamUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TextureExamUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EEDFEB62667B1D200C20F27 /* TextureExamUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextureExamUITests.swift; sourceTree = "<group>"; };
+		7EEDFEB82667B1D200C20F27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C8DFFF2D6EFD457212A4A05 /* Pods-TextureExam.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextureExam.release.xcconfig"; path = "Target Support Files/Pods-TextureExam/Pods-TextureExam.release.xcconfig"; sourceTree = "<group>"; };
+		B6F142020D1FE0E8D6BE2A91 /* Pods-TextureExam.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextureExam.debug.xcconfig"; path = "Target Support Files/Pods-TextureExam/Pods-TextureExam.debug.xcconfig"; sourceTree = "<group>"; };
+		CAF7D987131DB7285EEA1BCB /* Pods_TextureExamTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TextureExamTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC55A7837674CE2EFA8A3874 /* Pods_TextureExam.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TextureExam.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4689D328E307ED22D9812C8 /* Pods-TextureExam-TextureExamUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextureExam-TextureExamUITests.release.xcconfig"; path = "Target Support Files/Pods-TextureExam-TextureExamUITests/Pods-TextureExam-TextureExamUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F4E20D8A2C5F06FBB8FEB738 /* Pods-TextureExamTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextureExamTests.debug.xcconfig"; path = "Target Support Files/Pods-TextureExamTests/Pods-TextureExamTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F9326494F8E9E8C6F5993C7F /* Pods_TextureExam_TextureExamUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TextureExam_TextureExamUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		7EEDFDF42667844900C20F27 /* Frameworks */ = {
+		7EEDFE8E2667B1D000C20F27 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7343889957EA8501374115DA /* Pods_TextureExam__iOS_.framework in Frameworks */,
+				9575C39FAFD720B369D21FDF /* Pods_TextureExam.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7EEDFDFC2667844900C20F27 /* Frameworks */ = {
+		7EEDFEA42667B1D200C20F27 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FEAC15FC57C8F368532628A5 /* Pods_TextureExam__macOS_.framework in Frameworks */,
+				A5955BA9B02BA3F71775E8DF /* Pods_TextureExamTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7EEDFE042667844900C20F27 /* Frameworks */ = {
+		7EEDFEAF2667B1D200C20F27 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7EEDFE0F2667844900C20F27 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				25DBD68799FD13D7780FB875 /* Pods_TextureExam_TextureExamUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7EEDFDEA2667844800C20F27 = {
+		269B38BCBDDABB91F26A5C38 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				7EEDFDEF2667844800C20F27 /* Shared */,
-				7EEDFDF92667844900C20F27 /* iOS */,
-				7EEDFE002667844900C20F27 /* macOS */,
-				7EEDFE0A2667844900C20F27 /* Tests iOS */,
-				7EEDFE152667844900C20F27 /* Tests macOS */,
-				7EEDFDF82667844900C20F27 /* Products */,
-				A9DBEA5FCDEC6EFB1E9FE4DD /* Pods */,
-				CACDD2B974755C196F2C88F5 /* Frameworks */,
+				B6F142020D1FE0E8D6BE2A91 /* Pods-TextureExam.debug.xcconfig */,
+				9C8DFFF2D6EFD457212A4A05 /* Pods-TextureExam.release.xcconfig */,
+				5E9BFA1E932D344929C800EE /* Pods-TextureExam-TextureExamUITests.debug.xcconfig */,
+				F4689D328E307ED22D9812C8 /* Pods-TextureExam-TextureExamUITests.release.xcconfig */,
+				F4E20D8A2C5F06FBB8FEB738 /* Pods-TextureExamTests.debug.xcconfig */,
+				3B67E3A8CD0413FF4C9CFAB5 /* Pods-TextureExamTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		68EBDB3979C11BEE9A65DFA1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CC55A7837674CE2EFA8A3874 /* Pods_TextureExam.framework */,
+				F9326494F8E9E8C6F5993C7F /* Pods_TextureExam_TextureExamUITests.framework */,
+				CAF7D987131DB7285EEA1BCB /* Pods_TextureExamTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7EEDFE882667B1D000C20F27 = {
+			isa = PBXGroup;
+			children = (
+				7EEDFE932667B1D000C20F27 /* TextureExam */,
+				7EEDFEAA2667B1D200C20F27 /* TextureExamTests */,
+				7EEDFEB52667B1D200C20F27 /* TextureExamUITests */,
+				7EEDFE922667B1D000C20F27 /* Products */,
+				269B38BCBDDABB91F26A5C38 /* Pods */,
+				68EBDB3979C11BEE9A65DFA1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		7EEDFDEF2667844800C20F27 /* Shared */ = {
+		7EEDFE922667B1D000C20F27 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7EEDFDF02667844800C20F27 /* TextureExamApp.swift */,
-				7EEDFDF12667844800C20F27 /* ContentView.swift */,
-				7EEDFDF22667844900C20F27 /* Assets.xcassets */,
-			);
-			path = Shared;
-			sourceTree = "<group>";
-		};
-		7EEDFDF82667844900C20F27 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				7EEDFDF72667844900C20F27 /* TextureExam.app */,
-				7EEDFDFF2667844900C20F27 /* TextureExam.app */,
-				7EEDFE072667844900C20F27 /* Tests iOS.xctest */,
-				7EEDFE122667844900C20F27 /* Tests macOS.xctest */,
+				7EEDFE912667B1D000C20F27 /* TextureExam.app */,
+				7EEDFEA72667B1D200C20F27 /* TextureExamTests.xctest */,
+				7EEDFEB22667B1D200C20F27 /* TextureExamUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7EEDFDF92667844900C20F27 /* iOS */ = {
+		7EEDFE932667B1D000C20F27 /* TextureExam */ = {
 			isa = PBXGroup;
 			children = (
-				7EEDFDFA2667844900C20F27 /* Info.plist */,
+				7EEDFE942667B1D000C20F27 /* AppDelegate.swift */,
+				7EEDFE962667B1D000C20F27 /* SceneDelegate.swift */,
+				7EEDFE982667B1D000C20F27 /* ViewController.swift */,
+				7EEDFE9A2667B1D000C20F27 /* Main.storyboard */,
+				7EEDFE9D2667B1D200C20F27 /* Assets.xcassets */,
+				7EEDFE9F2667B1D200C20F27 /* LaunchScreen.storyboard */,
+				7EEDFEA22667B1D200C20F27 /* Info.plist */,
 			);
-			path = iOS;
+			path = TextureExam;
 			sourceTree = "<group>";
 		};
-		7EEDFE002667844900C20F27 /* macOS */ = {
+		7EEDFEAA2667B1D200C20F27 /* TextureExamTests */ = {
 			isa = PBXGroup;
 			children = (
-				7EEDFE012667844900C20F27 /* Info.plist */,
-				7EEDFE022667844900C20F27 /* macOS.entitlements */,
+				7EEDFEAB2667B1D200C20F27 /* TextureExamTests.swift */,
+				7EEDFEAD2667B1D200C20F27 /* Info.plist */,
 			);
-			path = macOS;
+			path = TextureExamTests;
 			sourceTree = "<group>";
 		};
-		7EEDFE0A2667844900C20F27 /* Tests iOS */ = {
+		7EEDFEB52667B1D200C20F27 /* TextureExamUITests */ = {
 			isa = PBXGroup;
 			children = (
-				7EEDFE0B2667844900C20F27 /* Tests_iOS.swift */,
-				7EEDFE0D2667844900C20F27 /* Info.plist */,
+				7EEDFEB62667B1D200C20F27 /* TextureExamUITests.swift */,
+				7EEDFEB82667B1D200C20F27 /* Info.plist */,
 			);
-			path = "Tests iOS";
-			sourceTree = "<group>";
-		};
-		7EEDFE152667844900C20F27 /* Tests macOS */ = {
-			isa = PBXGroup;
-			children = (
-				7EEDFE162667844900C20F27 /* Tests_macOS.swift */,
-				7EEDFE182667844900C20F27 /* Info.plist */,
-			);
-			path = "Tests macOS";
-			sourceTree = "<group>";
-		};
-		A9DBEA5FCDEC6EFB1E9FE4DD /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				FA4973F14CC23DBD490CFEC0 /* Pods-TextureExam (iOS).debug.xcconfig */,
-				BA86A8383E0C401EE0F140CC /* Pods-TextureExam (iOS).release.xcconfig */,
-				5A150A0DA03FCD87A1A06160 /* Pods-TextureExam (macOS).debug.xcconfig */,
-				CC3C4BED573C078D2D09A9C7 /* Pods-TextureExam (macOS).release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
-		CACDD2B974755C196F2C88F5 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				52A851B9905C838D788DF470 /* Pods_TextureExam__iOS_.framework */,
-				E17908C948B834A10CE8E80B /* Pods_TextureExam__macOS_.framework */,
-			);
-			name = Frameworks;
+			path = TextureExamUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7EEDFDF62667844900C20F27 /* TextureExam (iOS) */ = {
+		7EEDFE902667B1D000C20F27 /* TextureExam */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7EEDFE212667844900C20F27 /* Build configuration list for PBXNativeTarget "TextureExam (iOS)" */;
+			buildConfigurationList = 7EEDFEBB2667B1D200C20F27 /* Build configuration list for PBXNativeTarget "TextureExam" */;
 			buildPhases = (
-				52928252FD0A1E2AA8257963 /* [CP] Check Pods Manifest.lock */,
-				7EEDFDF32667844900C20F27 /* Sources */,
-				7EEDFDF42667844900C20F27 /* Frameworks */,
-				7EEDFDF52667844900C20F27 /* Resources */,
-				F0A3C678EFAB893021EE1ABD /* [CP] Embed Pods Frameworks */,
+				74CDF3A7ABBDD0C7AA892503 /* [CP] Check Pods Manifest.lock */,
+				7EEDFE8D2667B1D000C20F27 /* Sources */,
+				7EEDFE8E2667B1D000C20F27 /* Frameworks */,
+				7EEDFE8F2667B1D000C20F27 /* Resources */,
+				33C92236645C93098EA5172C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "TextureExam (iOS)";
-			productName = "TextureExam (iOS)";
-			productReference = 7EEDFDF72667844900C20F27 /* TextureExam.app */;
+			name = TextureExam;
+			productName = TextureExam;
+			productReference = 7EEDFE912667B1D000C20F27 /* TextureExam.app */;
 			productType = "com.apple.product-type.application";
 		};
-		7EEDFDFE2667844900C20F27 /* TextureExam (macOS) */ = {
+		7EEDFEA62667B1D200C20F27 /* TextureExamTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7EEDFE242667844900C20F27 /* Build configuration list for PBXNativeTarget "TextureExam (macOS)" */;
+			buildConfigurationList = 7EEDFEBE2667B1D200C20F27 /* Build configuration list for PBXNativeTarget "TextureExamTests" */;
 			buildPhases = (
-				6B3ECC9987E2DDB7B8F15C52 /* [CP] Check Pods Manifest.lock */,
-				7EEDFDFB2667844900C20F27 /* Sources */,
-				7EEDFDFC2667844900C20F27 /* Frameworks */,
-				7EEDFDFD2667844900C20F27 /* Resources */,
+				84638EEF9B623AB6015C4775 /* [CP] Check Pods Manifest.lock */,
+				7EEDFEA32667B1D200C20F27 /* Sources */,
+				7EEDFEA42667B1D200C20F27 /* Frameworks */,
+				7EEDFEA52667B1D200C20F27 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				7EEDFEA92667B1D200C20F27 /* PBXTargetDependency */,
 			);
-			name = "TextureExam (macOS)";
-			productName = "TextureExam (macOS)";
-			productReference = 7EEDFDFF2667844900C20F27 /* TextureExam.app */;
-			productType = "com.apple.product-type.application";
+			name = TextureExamTests;
+			productName = TextureExamTests;
+			productReference = 7EEDFEA72667B1D200C20F27 /* TextureExamTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		7EEDFE062667844900C20F27 /* Tests iOS */ = {
+		7EEDFEB12667B1D200C20F27 /* TextureExamUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7EEDFE272667844900C20F27 /* Build configuration list for PBXNativeTarget "Tests iOS" */;
+			buildConfigurationList = 7EEDFEC12667B1D200C20F27 /* Build configuration list for PBXNativeTarget "TextureExamUITests" */;
 			buildPhases = (
-				7EEDFE032667844900C20F27 /* Sources */,
-				7EEDFE042667844900C20F27 /* Frameworks */,
-				7EEDFE052667844900C20F27 /* Resources */,
+				3535E9A98157D56CEB4A313C /* [CP] Check Pods Manifest.lock */,
+				7EEDFEAE2667B1D200C20F27 /* Sources */,
+				7EEDFEAF2667B1D200C20F27 /* Frameworks */,
+				7EEDFEB02667B1D200C20F27 /* Resources */,
+				C61293D0851AAB7134DC5D40 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				7EEDFE092667844900C20F27 /* PBXTargetDependency */,
+				7EEDFEB42667B1D200C20F27 /* PBXTargetDependency */,
 			);
-			name = "Tests iOS";
-			productName = "Tests iOS";
-			productReference = 7EEDFE072667844900C20F27 /* Tests iOS.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
-		7EEDFE112667844900C20F27 /* Tests macOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7EEDFE2A2667844900C20F27 /* Build configuration list for PBXNativeTarget "Tests macOS" */;
-			buildPhases = (
-				7EEDFE0E2667844900C20F27 /* Sources */,
-				7EEDFE0F2667844900C20F27 /* Frameworks */,
-				7EEDFE102667844900C20F27 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				7EEDFE142667844900C20F27 /* PBXTargetDependency */,
-			);
-			name = "Tests macOS";
-			productName = "Tests macOS";
-			productReference = 7EEDFE122667844900C20F27 /* Tests macOS.xctest */;
+			name = TextureExamUITests;
+			productName = TextureExamUITests;
+			productReference = 7EEDFEB22667B1D200C20F27 /* TextureExamUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		7EEDFDEB2667844800C20F27 /* Project object */ = {
+		7EEDFE892667B1D000C20F27 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
-					7EEDFDF62667844900C20F27 = {
+					7EEDFE902667B1D000C20F27 = {
 						CreatedOnToolsVersion = 12.4;
 					};
-					7EEDFDFE2667844900C20F27 = {
+					7EEDFEA62667B1D200C20F27 = {
 						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 7EEDFE902667B1D000C20F27;
 					};
-					7EEDFE062667844900C20F27 = {
+					7EEDFEB12667B1D200C20F27 = {
 						CreatedOnToolsVersion = 12.4;
-						TestTargetID = 7EEDFDF62667844900C20F27;
-					};
-					7EEDFE112667844900C20F27 = {
-						CreatedOnToolsVersion = 12.4;
-						TestTargetID = 7EEDFDFE2667844900C20F27;
+						TestTargetID = 7EEDFE902667B1D000C20F27;
 					};
 				};
 			};
-			buildConfigurationList = 7EEDFDEE2667844800C20F27 /* Build configuration list for PBXProject "TextureExam" */;
+			buildConfigurationList = 7EEDFE8C2667B1D000C20F27 /* Build configuration list for PBXProject "TextureExam" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -292,44 +260,37 @@
 				en,
 				Base,
 			);
-			mainGroup = 7EEDFDEA2667844800C20F27;
-			productRefGroup = 7EEDFDF82667844900C20F27 /* Products */;
+			mainGroup = 7EEDFE882667B1D000C20F27;
+			productRefGroup = 7EEDFE922667B1D000C20F27 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7EEDFDF62667844900C20F27 /* TextureExam (iOS) */,
-				7EEDFDFE2667844900C20F27 /* TextureExam (macOS) */,
-				7EEDFE062667844900C20F27 /* Tests iOS */,
-				7EEDFE112667844900C20F27 /* Tests macOS */,
+				7EEDFE902667B1D000C20F27 /* TextureExam */,
+				7EEDFEA62667B1D200C20F27 /* TextureExamTests */,
+				7EEDFEB12667B1D200C20F27 /* TextureExamUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		7EEDFDF52667844900C20F27 /* Resources */ = {
+		7EEDFE8F2667B1D000C20F27 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7EEDFE1D2667844900C20F27 /* Assets.xcassets in Resources */,
+				7EEDFEA12667B1D200C20F27 /* LaunchScreen.storyboard in Resources */,
+				7EEDFE9E2667B1D200C20F27 /* Assets.xcassets in Resources */,
+				7EEDFE9C2667B1D000C20F27 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7EEDFDFD2667844900C20F27 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7EEDFE1E2667844900C20F27 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7EEDFE052667844900C20F27 /* Resources */ = {
+		7EEDFEA52667B1D200C20F27 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7EEDFE102667844900C20F27 /* Resources */ = {
+		7EEDFEB02667B1D200C20F27 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -339,121 +300,171 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		52928252FD0A1E2AA8257963 /* [CP] Check Pods Manifest.lock */ = {
+		33C92236645C93098EA5172C /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-TextureExam (iOS)-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6B3ECC9987E2DDB7B8F15C52 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-TextureExam (macOS)-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F0A3C678EFAB893021EE1ABD /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TextureExam (iOS)/Pods-TextureExam (iOS)-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-TextureExam/Pods-TextureExam-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TextureExam (iOS)/Pods-TextureExam (iOS)-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-TextureExam/Pods-TextureExam-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TextureExam (iOS)/Pods-TextureExam (iOS)-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TextureExam/Pods-TextureExam-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3535E9A98157D56CEB4A313C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TextureExam-TextureExamUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		74CDF3A7ABBDD0C7AA892503 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TextureExam-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		84638EEF9B623AB6015C4775 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TextureExamTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C61293D0851AAB7134DC5D40 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TextureExam-TextureExamUITests/Pods-TextureExam-TextureExamUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TextureExam-TextureExamUITests/Pods-TextureExam-TextureExamUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TextureExam-TextureExamUITests/Pods-TextureExam-TextureExamUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		7EEDFDF32667844900C20F27 /* Sources */ = {
+		7EEDFE8D2667B1D000C20F27 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7EEDFE1B2667844900C20F27 /* ContentView.swift in Sources */,
-				7EEDFE192667844900C20F27 /* TextureExamApp.swift in Sources */,
+				7EEDFE992667B1D000C20F27 /* ViewController.swift in Sources */,
+				7EEDFE952667B1D000C20F27 /* AppDelegate.swift in Sources */,
+				7EEDFE972667B1D000C20F27 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7EEDFDFB2667844900C20F27 /* Sources */ = {
+		7EEDFEA32667B1D200C20F27 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7EEDFE1C2667844900C20F27 /* ContentView.swift in Sources */,
-				7EEDFE1A2667844900C20F27 /* TextureExamApp.swift in Sources */,
+				7EEDFEAC2667B1D200C20F27 /* TextureExamTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7EEDFE032667844900C20F27 /* Sources */ = {
+		7EEDFEAE2667B1D200C20F27 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7EEDFE0C2667844900C20F27 /* Tests_iOS.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7EEDFE0E2667844900C20F27 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7EEDFE172667844900C20F27 /* Tests_macOS.swift in Sources */,
+				7EEDFEB72667B1D200C20F27 /* TextureExamUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		7EEDFE092667844900C20F27 /* PBXTargetDependency */ = {
+		7EEDFEA92667B1D200C20F27 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 7EEDFDF62667844900C20F27 /* TextureExam (iOS) */;
-			targetProxy = 7EEDFE082667844900C20F27 /* PBXContainerItemProxy */;
+			target = 7EEDFE902667B1D000C20F27 /* TextureExam */;
+			targetProxy = 7EEDFEA82667B1D200C20F27 /* PBXContainerItemProxy */;
 		};
-		7EEDFE142667844900C20F27 /* PBXTargetDependency */ = {
+		7EEDFEB42667B1D200C20F27 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 7EEDFDFE2667844900C20F27 /* TextureExam (macOS) */;
-			targetProxy = 7EEDFE132667844900C20F27 /* PBXContainerItemProxy */;
+			target = 7EEDFE902667B1D000C20F27 /* TextureExam */;
+			targetProxy = 7EEDFEB32667B1D200C20F27 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		7EEDFE9A2667B1D000C20F27 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7EEDFE9B2667B1D000C20F27 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7EEDFE9F2667B1D200C20F27 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7EEDFEA02667B1D200C20F27 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
-		7EEDFE1F2667844900C20F27 /* Debug */ = {
+		7EEDFEB92667B1D200C20F27 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -504,15 +515,17 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		7EEDFE202667844900C20F27 /* Release */ = {
+		7EEDFEBA2667B1D200C20F27 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -557,250 +570,184 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
-			};
-			name = Release;
-		};
-		7EEDFE222667844900C20F27 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FA4973F14CC23DBD490CFEC0 /* Pods-TextureExam (iOS).debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = T7JU69Q47J;
-				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = iOS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = exam.TextureExam;
-				PRODUCT_NAME = TextureExam;
-				SDKROOT = iphoneos;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		7EEDFE232667844900C20F27 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BA86A8383E0C401EE0F140CC /* Pods-TextureExam (iOS).release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = T7JU69Q47J;
-				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = iOS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = exam.TextureExam;
-				PRODUCT_NAME = TextureExam;
-				SDKROOT = iphoneos;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		7EEDFE252667844900C20F27 /* Debug */ = {
+		7EEDFEBC2667B1D200C20F27 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5A150A0DA03FCD87A1A06160 /* Pods-TextureExam (macOS).debug.xcconfig */;
+			baseConfigurationReference = B6F142020D1FE0E8D6BE2A91 /* Pods-TextureExam.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
-				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = T7JU69Q47J;
-				ENABLE_HARDENED_RUNTIME = YES;
-				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = macOS/Info.plist;
+				INFOPLIST_FILE = TextureExam/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
-					"@executable_path/../Frameworks",
+					"@executable_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = exam.TextureExam;
-				PRODUCT_NAME = TextureExam;
-				SDKROOT = macosx;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		7EEDFE262667844900C20F27 /* Release */ = {
+		7EEDFEBD2667B1D200C20F27 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CC3C4BED573C078D2D09A9C7 /* Pods-TextureExam (macOS).release.xcconfig */;
+			baseConfigurationReference = 9C8DFFF2D6EFD457212A4A05 /* Pods-TextureExam.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
-				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = T7JU69Q47J;
-				ENABLE_HARDENED_RUNTIME = YES;
-				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = macOS/Info.plist;
+				INFOPLIST_FILE = TextureExam/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
-					"@executable_path/../Frameworks",
+					"@executable_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = exam.TextureExam;
-				PRODUCT_NAME = TextureExam;
-				SDKROOT = macosx;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
-		7EEDFE282667844900C20F27 /* Debug */ = {
+		7EEDFEBF2667B1D200C20F27 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4E20D8A2C5F06FBB8FEB738 /* Pods-TextureExamTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T7JU69Q47J;
-				INFOPLIST_FILE = "Tests iOS/Info.plist";
+				INFOPLIST_FILE = TextureExamTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "exam.Tests-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = exam.TextureExamTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "TextureExam (iOS)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TextureExam.app/TextureExam";
 			};
 			name = Debug;
 		};
-		7EEDFE292667844900C20F27 /* Release */ = {
+		7EEDFEC02667B1D200C20F27 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B67E3A8CD0413FF4C9CFAB5 /* Pods-TextureExamTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T7JU69Q47J;
-				INFOPLIST_FILE = "Tests iOS/Info.plist";
+				INFOPLIST_FILE = TextureExamTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "exam.Tests-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = exam.TextureExamTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "TextureExam (iOS)";
-				VALIDATE_PRODUCT = YES;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TextureExam.app/TextureExam";
 			};
 			name = Release;
 		};
-		7EEDFE2B2667844900C20F27 /* Debug */ = {
+		7EEDFEC22667B1D200C20F27 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E9BFA1E932D344929C800EE /* Pods-TextureExam-TextureExamUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = T7JU69Q47J;
-				INFOPLIST_FILE = "Tests macOS/Info.plist";
+				INFOPLIST_FILE = TextureExamUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.1;
-				PRODUCT_BUNDLE_IDENTIFIER = "exam.Tests-macOS";
+				PRODUCT_BUNDLE_IDENTIFIER = exam.TextureExamUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
 				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = "TextureExam (macOS)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TextureExam;
 			};
 			name = Debug;
 		};
-		7EEDFE2C2667844900C20F27 /* Release */ = {
+		7EEDFEC32667B1D200C20F27 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4689D328E307ED22D9812C8 /* Pods-TextureExam-TextureExamUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = T7JU69Q47J;
-				INFOPLIST_FILE = "Tests macOS/Info.plist";
+				INFOPLIST_FILE = TextureExamUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.1;
-				PRODUCT_BUNDLE_IDENTIFIER = "exam.Tests-macOS";
+				PRODUCT_BUNDLE_IDENTIFIER = exam.TextureExamUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
 				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = "TextureExam (macOS)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TextureExam;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7EEDFDEE2667844800C20F27 /* Build configuration list for PBXProject "TextureExam" */ = {
+		7EEDFE8C2667B1D000C20F27 /* Build configuration list for PBXProject "TextureExam" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7EEDFE1F2667844900C20F27 /* Debug */,
-				7EEDFE202667844900C20F27 /* Release */,
+				7EEDFEB92667B1D200C20F27 /* Debug */,
+				7EEDFEBA2667B1D200C20F27 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7EEDFE212667844900C20F27 /* Build configuration list for PBXNativeTarget "TextureExam (iOS)" */ = {
+		7EEDFEBB2667B1D200C20F27 /* Build configuration list for PBXNativeTarget "TextureExam" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7EEDFE222667844900C20F27 /* Debug */,
-				7EEDFE232667844900C20F27 /* Release */,
+				7EEDFEBC2667B1D200C20F27 /* Debug */,
+				7EEDFEBD2667B1D200C20F27 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7EEDFE242667844900C20F27 /* Build configuration list for PBXNativeTarget "TextureExam (macOS)" */ = {
+		7EEDFEBE2667B1D200C20F27 /* Build configuration list for PBXNativeTarget "TextureExamTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7EEDFE252667844900C20F27 /* Debug */,
-				7EEDFE262667844900C20F27 /* Release */,
+				7EEDFEBF2667B1D200C20F27 /* Debug */,
+				7EEDFEC02667B1D200C20F27 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7EEDFE272667844900C20F27 /* Build configuration list for PBXNativeTarget "Tests iOS" */ = {
+		7EEDFEC12667B1D200C20F27 /* Build configuration list for PBXNativeTarget "TextureExamUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7EEDFE282667844900C20F27 /* Debug */,
-				7EEDFE292667844900C20F27 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7EEDFE2A2667844900C20F27 /* Build configuration list for PBXNativeTarget "Tests macOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7EEDFE2B2667844900C20F27 /* Debug */,
-				7EEDFE2C2667844900C20F27 /* Release */,
+				7EEDFEC22667B1D200C20F27 /* Debug */,
+				7EEDFEC32667B1D200C20F27 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 7EEDFDEB2667844800C20F27 /* Project object */;
+	rootObject = 7EEDFE892667B1D000C20F27 /* Project object */;
 }
