@@ -52,6 +52,18 @@ class ViewController: ASDKViewController<ASDisplayNode> {
     )
     return node
   }()
+  private let subTitleNode: ASTextNode = {
+    let node = ASTextNode()
+    let paragraphStyle = NSMutableParagraphStyle()
+    paragraphStyle.alignment = .center
+    node.attributedText = NSAttributedString(
+      string: "현재 버전 21.06.01",
+      attributes: [
+        .font: UIFont.boldSystemFont(ofSize: 15.0),
+        .paragraphStyle: paragraphStyle
+      ])
+    return node
+  }()
   private let backgroundNode = ASDisplayNode()
 
 
