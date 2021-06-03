@@ -10,6 +10,12 @@ import AsyncDisplayKit
 
 class ViewController: ASDKViewController<ASDisplayNode> {
 
+  enum const {
+    static let cornerRadius: CGFloat = 10
+    static let boldFontSize: CGFloat = 17
+    static let fontSize: CGFloat = 15
+  }
+
   // MARK: UI
 
   private let imageNode: ASImageNode = {
@@ -25,7 +31,7 @@ class ViewController: ASDKViewController<ASDisplayNode> {
     node.attributedText = NSAttributedString(
       string: "현재 최신 버전을 이용 중입니다.",
       attributes: [
-        .font: UIFont.boldSystemFont(ofSize: 17),
+        .font: UIFont.boldSystemFont(ofSize: const.boldFontSize),
         .foregroundColor: UIColor.black,
         .paragraphStyle: paragraphStyle
       ]
@@ -39,7 +45,7 @@ class ViewController: ASDKViewController<ASDisplayNode> {
     node.attributedText = NSAttributedString(
       string: "현재 버전 21.06.01",
       attributes: [
-        .font: UIFont.systemFont(ofSize: 15.0),
+        .font: UIFont.systemFont(ofSize: const.fontSize),
         .paragraphStyle: paragraphStyle
       ])
     return node
@@ -48,13 +54,13 @@ class ViewController: ASDKViewController<ASDisplayNode> {
     let node = ASButtonNode()
     let title = NSAttributedString(string: "최신 버전 업데이트",
                                    attributes: [
-                                    .font : UIFont.boldSystemFont(ofSize: 17),
+                                    .font : UIFont.boldSystemFont(ofSize: const.fontSize),
                                     .foregroundColor : UIColor.systemGray
     ])
     node.setAttributedTitle(title, for: .normal)
     node.contentVerticalAlignment = .center
     node.contentHorizontalAlignment = .middle
-    node.cornerRadius = 10
+    node.cornerRadius = const.cornerRadius
     node.borderWidth = 1
     node.borderColor = UIColor.systemGray.cgColor
     return node
@@ -65,7 +71,6 @@ class ViewController: ASDKViewController<ASDisplayNode> {
 
   override init() {
     super.init(node: ASDisplayNode())
-
     self.title = "버전확인"
 
     self.node.backgroundColor = .systemGray6
