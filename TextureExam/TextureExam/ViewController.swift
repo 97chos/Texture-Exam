@@ -12,8 +12,9 @@ class ViewController: ASDKViewController<ASDisplayNode> {
 
   // MARK: UI
 
-//  private let verticalLayoutNode1: ASLayoutSize = {
-//
+//  private lazy var verticalLayoutNode1: ASLayoutSpec = {
+//    let layout = ASStackLayoutSpec()
+//    layout.direction = .horizontal
 //  }()
 //  private let verticalLayoutNode2: ASLayoutSize = {
 //
@@ -40,7 +41,7 @@ class ViewController: ASDKViewController<ASDisplayNode> {
   private let titleNode: ASTextNode = {
     let node = ASTextNode()
     let paragraphStyle = NSMutableParagraphStyle()
-    paragraphStyle.alignment = .left
+    paragraphStyle.alignment = .center
     node.attributedText = NSAttributedString(
       string: "현재 최신 버전을 이용 중입니다.",
       attributes: [
@@ -51,6 +52,7 @@ class ViewController: ASDKViewController<ASDisplayNode> {
     )
     return node
   }()
+  private let backgroundNode = ASDisplayNode()
 
 
   // MARK: Initializing
@@ -73,24 +75,49 @@ class ViewController: ASDKViewController<ASDisplayNode> {
   // MARK: Layout
 
   private func layoutSpecThatFits(_ constraintedSize: ASSizeRange) -> ASLayoutSpec {
-    var containerInsets: UIEdgeInsets = self.node.safeAreaInsets
-    return ASInsetLayoutSpec(insets: containerInsets,
-                             child: self.contentLayoutSpec())
+    let contentLayout = ASStackLayoutSpec(
+      direction: .vertical,
+      spacing: .zero,
+      justifyContent: .start,
+      alignItems: .stretch,
+      children: [
+        contentAreaLayoutSpec(),
+        ASLayoutSpec().styled{ $0.flexShrink = 1.0 }
+      ])
+
+    return ASInsetLayoutSpec(insets: self.node.safeAreaInsets,
+                             child: contentLayout)
   }
 
-  private func contentLayoutSpec() -> ASLayoutSpec {
-    return ASStackLayoutSpec(direction: .vertical,
+  private func contentAreaLayoutSpec() -> ASLayoutSpec {
+    let contentLayout = ASStackLayoutSpec(direction: .vertical,
                              spacing: 10.0,
-                             justifyContent: .center,
-                             alignItems: .center,
-                             children: [self.imageLayoutSpec(), self.titleNode])
+                             justifyContent: .start,
+                             alignItems: .stretch,
+                             children: [
+                              imageAreaLayoutSpec(),
+                              titleNode
+                             ])
+
+    backgroundNode.backgroundColor = .red
+
+    let containerLayout = ASInsetLayoutSpec(insets: .init(top: 10, left: 10, bottom: 10, right: 10), child: contentLayout)
+    return ASBackgroundLayoutSpec(child: containerLayout, background: backgroundNode)
   }
 
-  private func imageLayoutSpec() -> ASLayoutSpec {
-    return ASRatioLayoutSpec(ratio: 1.0, child: self.imageNode).styled {
-      $0.flexShrink = 1.0
-      $0.maxWidth = .init(unit: .points, value: 300)
-    }
+  private func imageAreaLayoutSpec() -> ASLayoutSpec {
+    ASStackLayoutSpec(
+      direction: .horizontal,
+      spacing: .zero,
+      justifyContent: .spaceBetween,
+      alignItems: .stretch,
+      children: [
+        ASLayoutSpec().styled{ $0.flexShrink = 1.0 },
+        ASRatioLayoutSpec(ratio: 1.0, child: self.imageNode).styled {
+          $0.maxWidth = .init(unit: .points, value: 300)
+        },
+        ASLayoutSpec().styled{ $0.flexShrink = 1.0 }
+      ])
   }
 
 }
