@@ -12,26 +12,6 @@ class ViewController: ASDKViewController<ASDisplayNode> {
 
   // MARK: UI
 
-//  private lazy var verticalLayoutNode1: ASLayoutSpec = {
-//    let layout = ASStackLayoutSpec()
-//    layout.direction = .horizontal
-//  }()
-//  private let verticalLayoutNode2: ASLayoutSize = {
-//
-//  }()
-//  private let verticalLayoutNode3: ASLayoutSize = {
-//
-//  }()
-//  private let horizontalImageNode1: ASLayoutSize = {
-//
-//  }()
-//  private let horizontalImageNode2: ASLayoutSize = {
-//
-//  }()
-//  private let virticalTitleNode: ASLayoutSize = {
-//
-//  }()
-
   private let imageNode: ASImageNode = {
     let node = ASImageNode()
     node.image = UIImage(named: "flitto")
@@ -45,8 +25,8 @@ class ViewController: ASDKViewController<ASDisplayNode> {
     node.attributedText = NSAttributedString(
       string: "현재 최신 버전을 이용 중입니다.",
       attributes: [
-        .font: UIFont.boldSystemFont(ofSize: 15.0),
-        .foregroundColor: UIColor.gray,
+        .font: UIFont.boldSystemFont(ofSize: 17),
+        .foregroundColor: UIColor.black,
         .paragraphStyle: paragraphStyle
       ]
     )
@@ -59,18 +39,35 @@ class ViewController: ASDKViewController<ASDisplayNode> {
     node.attributedText = NSAttributedString(
       string: "현재 버전 21.06.01",
       attributes: [
-        .font: UIFont.boldSystemFont(ofSize: 15.0),
+        .font: UIFont.systemFont(ofSize: 15.0),
         .paragraphStyle: paragraphStyle
       ])
     return node
   }()
-  private let backgroundNode = ASDisplayNode()
+  private let buttonNode: ASButtonNode = {
+    let node = ASButtonNode()
+    let title = NSAttributedString(string: "최신 버전 업데이트",
+                                   attributes: [
+                                    .font : UIFont.boldSystemFont(ofSize: 17),
+                                    .foregroundColor : UIColor.systemGray
+    ])
+    node.setAttributedTitle(title, for: .normal)
+    node.contentVerticalAlignment = .center
+    node.contentHorizontalAlignment = .middle
+    node.cornerRadius = 10
+    node.borderWidth = 1
+    node.borderColor = UIColor.systemGray.cgColor
+    return node
+  }()
 
 
   // MARK: Initializing
 
   override init() {
     super.init(node: ASDisplayNode())
+
+    self.title = "버전확인"
+
     self.node.backgroundColor = .systemGray6
     self.node.automaticallyManagesSubnodes = true
     self.node.automaticallyRelayoutOnSafeAreaChanges = true
@@ -103,17 +100,20 @@ class ViewController: ASDKViewController<ASDisplayNode> {
 
   private func contentAreaLayoutSpec() -> ASLayoutSpec {
     let contentLayout = ASStackLayoutSpec(direction: .vertical,
-                             spacing: 10.0,
+                             spacing: 20.0,
                              justifyContent: .start,
                              alignItems: .stretch,
                              children: [
                               imageAreaLayoutSpec(),
-                              titleLayoutSpec()
+                              titleWrapperLayoutSpec(),
+                              ASLayoutSpec().styled{ $0.flexShrink = 1.0 },
+                              buttonLayoutSpec()
                              ])
 
-    backgroundNode.backgroundColor = .red
+    let backgroundNode = ASDisplayNode()
+    backgroundNode.backgroundColor = .white
 
-    let containerLayout = ASInsetLayoutSpec(insets: .init(top: 0, left: 0, bottom: 0, right: 0), child: contentLayout)
+    let containerLayout = ASInsetLayoutSpec(insets: .init(top: 70, left: 0, bottom: 70, right: 0), child: contentLayout)
     return ASBackgroundLayoutSpec(child: containerLayout, background: backgroundNode)
   }
 
@@ -126,9 +126,21 @@ class ViewController: ASDKViewController<ASDisplayNode> {
       children: [
         ASLayoutSpec().styled{ $0.flexShrink = 1.0 },
         ASRatioLayoutSpec(ratio: 1.0, child: self.imageNode).styled {
-          $0.maxWidth = .init(unit: .points, value: 300)
+          $0.maxWidth = .init(unit: .points, value: 100)
         },
         ASLayoutSpec().styled{ $0.flexShrink = 1.0 }
+      ])
+  }
+
+  private func titleWrapperLayoutSpec() -> ASLayoutSpec {
+    ASStackLayoutSpec(
+      direction: .vertical,
+      spacing: 0,
+      justifyContent: .spaceBetween,
+      alignItems: .stretch,
+      children: [
+        titleLayoutSpec(),
+        subtitleLayoutSec()
       ])
   }
 
@@ -142,6 +154,34 @@ class ViewController: ASDKViewController<ASDisplayNode> {
         ASLayoutSpec().styled{ $0.flexShrink = 1.0},
         titleNode,
         ASLayoutSpec().styled{ $0.flexShrink = 1.0}
+      ])
+  }
+
+  private func subtitleLayoutSec() -> ASLayoutSpec {
+    ASStackLayoutSpec(
+      direction: .horizontal,
+      spacing: .zero,
+      justifyContent: .spaceBetween,
+      alignItems: .stretch,
+      children: [
+        ASLayoutSpec().styled{ $0.flexShrink = 1.0 },
+        subTitleNode,
+        ASLayoutSpec().styled{ $0.flexShrink = 1.0 }
+      ])
+  }
+
+  private func buttonLayoutSpec() -> ASLayoutSpec {
+    ASStackLayoutSpec(
+      direction: .horizontal,
+      spacing: .zero,
+      justifyContent: .spaceBetween,
+      alignItems: .stretch,
+      children: [
+        ASLayoutSpec().styled{ $0.flexShrink = 1.0 },
+        ASWrapperLayoutSpec(layoutElement: self.buttonNode).styled {
+          $0.minSize = .init(width: 200, height: 50)
+        },
+        ASLayoutSpec().styled{ $0.flexShrink = 1.0 }
       ])
   }
 }
