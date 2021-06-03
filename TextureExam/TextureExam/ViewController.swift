@@ -59,7 +59,7 @@ class ViewController: ASDKViewController<ASDisplayNode> {
 
   override init() {
     super.init(node: ASDisplayNode())
-    self.node.backgroundColor = .white
+    self.node.backgroundColor = .systemGray6
     self.node.automaticallyManagesSubnodes = true
     self.node.automaticallyRelayoutOnSafeAreaChanges = true
     self.node.layoutSpecBlock = { [weak self] (node, constraintedSize) -> ASLayoutSpec in
@@ -96,12 +96,12 @@ class ViewController: ASDKViewController<ASDisplayNode> {
                              alignItems: .stretch,
                              children: [
                               imageAreaLayoutSpec(),
-                              titleNode
+                              titleLayoutSpec()
                              ])
 
     backgroundNode.backgroundColor = .red
 
-    let containerLayout = ASInsetLayoutSpec(insets: .init(top: 10, left: 10, bottom: 10, right: 10), child: contentLayout)
+    let containerLayout = ASInsetLayoutSpec(insets: .init(top: 0, left: 0, bottom: 0, right: 0), child: contentLayout)
     return ASBackgroundLayoutSpec(child: containerLayout, background: backgroundNode)
   }
 
@@ -120,5 +120,17 @@ class ViewController: ASDKViewController<ASDisplayNode> {
       ])
   }
 
+  private func titleLayoutSpec() -> ASLayoutSpec {
+    ASStackLayoutSpec(
+      direction: .horizontal,
+      spacing: .zero,
+      justifyContent: .spaceBetween,
+      alignItems: .stretch,
+      children: [
+        ASLayoutSpec().styled{ $0.flexShrink = 1.0},
+        titleNode,
+        ASLayoutSpec().styled{ $0.flexShrink = 1.0}
+      ])
+  }
 }
 
