@@ -53,8 +53,19 @@
 			<key>orderHint</key>
 			<integer>6</integer>
 		</dict>
+		<key>Texture.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>8</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
-	<dict/>
+	<dict>
+		<key>DB66E43BC980D741F3C7C5CF3ACEEFA4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
 </dict>
 </plist>

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		25DBD68799FD13D7780FB875 /* Pods_TextureExam_TextureExamUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9326494F8E9E8C6F5993C7F /* Pods_TextureExam_TextureExamUITests.framework */; };
+		7E98D4D82669EE9B00C9D974 /* ContainerNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E98D4D72669EE9B00C9D974 /* ContainerNode.swift */; };
+		7E98D4DD266A069D00C9D974 /* ContentsNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E98D4DC266A069D00C9D974 /* ContentsNode.swift */; };
 		7EEDFE952667B1D000C20F27 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EEDFE942667B1D000C20F27 /* AppDelegate.swift */; };
 		7EEDFE972667B1D000C20F27 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EEDFE962667B1D000C20F27 /* SceneDelegate.swift */; };
 		7EEDFE992667B1D000C20F27 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EEDFE982667B1D000C20F27 /* ViewController.swift */; };
@@ -39,6 +41,8 @@
 /* Begin PBXFileReference section */
 		3B67E3A8CD0413FF4C9CFAB5 /* Pods-TextureExamTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextureExamTests.release.xcconfig"; path = "Target Support Files/Pods-TextureExamTests/Pods-TextureExamTests.release.xcconfig"; sourceTree = "<group>"; };
 		5E9BFA1E932D344929C800EE /* Pods-TextureExam-TextureExamUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextureExam-TextureExamUITests.debug.xcconfig"; path = "Target Support Files/Pods-TextureExam-TextureExamUITests/Pods-TextureExam-TextureExamUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7E98D4D72669EE9B00C9D974 /* ContainerNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerNode.swift; sourceTree = "<group>"; };
+		7E98D4DC266A069D00C9D974 /* ContentsNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentsNode.swift; sourceTree = "<group>"; };
 		7EEDFE912667B1D000C20F27 /* TextureExam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextureExam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EEDFE942667B1D000C20F27 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7EEDFE962667B1D000C20F27 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -140,6 +144,8 @@
 				7EEDFE942667B1D000C20F27 /* AppDelegate.swift */,
 				7EEDFE962667B1D000C20F27 /* SceneDelegate.swift */,
 				7EEDFE982667B1D000C20F27 /* ViewController.swift */,
+				7E98D4D72669EE9B00C9D974 /* ContainerNode.swift */,
+				7E98D4DC266A069D00C9D974 /* ContentsNode.swift */,
 				7EEDFE9D2667B1D200C20F27 /* Assets.xcassets */,
 				7EEDFE9F2667B1D200C20F27 /* LaunchScreen.storyboard */,
 				7EEDFEA22667B1D200C20F27 /* Info.plist */,
@@ -403,8 +409,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				7EEDFE992667B1D000C20F27 /* ViewController.swift in Sources */,
+				7E98D4DD266A069D00C9D974 /* ContentsNode.swift in Sources */,
 				7EEDFE952667B1D000C20F27 /* AppDelegate.swift in Sources */,
 				7EEDFE972667B1D000C20F27 /* SceneDelegate.swift in Sources */,
+				7E98D4D82669EE9B00C9D974 /* ContainerNode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
