@@ -89,48 +89,36 @@ extension ContentsNode {
       }
 
     ]
-//    return { in
-//      [
-//      {
+  }
+
+//  private func applyImageNode() {
+//    self.imageNode.image = UIImage(named: "flitto")
+//    self.imageNode.cornerRadius = const.cornerRadius
+//  }
 //
-//      }
+//  private func applyTitleNode() {
+//    let paragraphStyle = NSMutableParagraphStyle()
+//    paragraphStyle.alignment = .center
+//    self.titleNode.attributedText = NSAttributedString(
+//      string: "현재 최신 버전을 이용 중입니다.",
+//      attributes: [
+//        .font: UIFont.boldSystemFont(ofSize: const.boldFontSize),
+//        .foregroundColor: UIColor.black,
+//        .paragraphStyle: paragraphStyle
 //      ]
-//    }
-//    self.applyImageNode()
-//    self.applyTitleNode()
-//    self.applySubTitleNode()
-//    self.applyButtonNode()
-//    self.applyBackgroundNode()
-  }
-
-  private func applyImageNode() {
-    self.imageNode.image = UIImage(named: "flitto")
-    self.imageNode.cornerRadius = const.cornerRadius
-  }
-
-  private func applyTitleNode() {
-    let paragraphStyle = NSMutableParagraphStyle()
-    paragraphStyle.alignment = .center
-    self.titleNode.attributedText = NSAttributedString(
-      string: "현재 최신 버전을 이용 중입니다.",
-      attributes: [
-        .font: UIFont.boldSystemFont(ofSize: const.boldFontSize),
-        .foregroundColor: UIColor.black,
-        .paragraphStyle: paragraphStyle
-      ]
-    )
-  }
-
-  private func applySubTitleNode() {
-    let paragraphStyle = NSMutableParagraphStyle()
-    paragraphStyle.alignment = .center
-    self.subTitleNode.attributedText = NSAttributedString(
-      string: "현재 버전 21.06.01",
-      attributes: [
-        .font: UIFont.systemFont(ofSize: const.fontSize),
-        .paragraphStyle: paragraphStyle
-      ])
-  }
+//    )
+//  }
+//
+//  private func applySubTitleNode() {
+//    let paragraphStyle = NSMutableParagraphStyle()
+//    paragraphStyle.alignment = .center
+//    self.subTitleNode.attributedText = NSAttributedString(
+//      string: "현재 버전 21.06.01",
+//      attributes: [
+//        .font: UIFont.systemFont(ofSize: const.fontSize),
+//        .paragraphStyle: paragraphStyle
+//      ])
+//  }
 
   private func applyButtonNode() {
     let title = NSAttributedString(string: "최신 버전 업데이트",
