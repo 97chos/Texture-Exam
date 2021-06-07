@@ -7,6 +7,7 @@
 
 import UIKit
 import AsyncDisplayKit
+import TextureSwiftSupport
 
 class ViewController: ASDKViewController<ContainerNode> {
 

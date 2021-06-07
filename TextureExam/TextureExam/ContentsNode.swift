@@ -7,6 +7,7 @@
 
 import Foundation
 import AsyncDisplayKit
+import TextureSwiftSupport
 
 final class ContentsNode: ASScrollNode {
 
@@ -18,6 +19,9 @@ final class ContentsNode: ASScrollNode {
     static let fontSize: CGFloat = 15
     static let spacing: CGFloat = 20
     static let borderWidth: CGFloat = 1
+    static let minSpacing: CGFloat = 70
+    static let minButtonSize: CGSize = .init(width: 200, height: 50)
+    static let minImageWidth: CGFloat = 100
   }
 
   private let imageNode = ASImageNode()
@@ -120,21 +124,21 @@ extension ContentsNode {
 //      ])
 //  }
 
-  private func applyButtonNode() {
-    let title = NSAttributedString(string: "최신 버전 업데이트",
-                                   attributes: [
-                                    .font : UIFont.boldSystemFont(ofSize: const.fontSize),
-                                    .foregroundColor : UIColor.systemGray
-    ])
-    self.buttonNode.setAttributedTitle(title, for: .normal)
-    self.buttonNode.cornerRadius = const.cornerRadius
-    self.buttonNode.borderWidth = const.borderWidth
-    self.buttonNode.borderColor = UIColor.systemGray.cgColor
-  }
-
-  private func applyBackgroundNode() {
-    self.backgroundNode.backgroundColor = .white
-  }
+//  private func applyButtonNode() {
+//    let title = NSAttributedString(string: "최신 버전 업데이트",
+//                                   attributes: [
+//                                    .font : UIFont.boldSystemFont(ofSize: const.fontSize),
+//                                    .foregroundColor : UIColor.systemGray
+//    ])
+//    self.buttonNode.setAttributedTitle(title, for: .normal)
+//    self.buttonNode.cornerRadius = const.cornerRadius
+//    self.buttonNode.borderWidth = const.borderWidth
+//    self.buttonNode.borderColor = UIColor.systemGray.cgColor
+//  }
+//
+//  private func applyBackgroundNode() {
+//    self.backgroundNode.backgroundColor = .white
+//  }
 }
 
 
@@ -142,18 +146,25 @@ extension ContentsNode {
 
 extension ContentsNode {
   override func layoutSpecThatFits(_ constrainedSize: ASSizeRange) -> ASLayoutSpec {
-    ASStackLayoutSpec(
-      direction: .vertical,
-      spacing: 0,
-      justifyContent: .start,
-      alignItems: .stretch,
-      children: [
-        contentsAreaLayoutSpec(),
-        ASLayoutSpec().styled{
-          $0.minHeight = .init(unit: .points, value: 0)
-          $0.flexShrink = 1.0
-        }
-      ])
+    LayoutSpec { [weak self] in
+      VStackLayout {
+        self?.contentsAreaLayoutSpec()
+          .padding(.init(top: const.minSpacing, left: 0, bottom: const.minSpacing, right: 0))
+          .background(self?.backgroundNode)
+      }
+    }
+//    ASStackLayoutSpec(
+//      direction: .vertical,
+//      spacing: 0,
+//      justifyContent: .start,
+//      alignItems: .stretch,
+//      children: [
+//        contentsAreaLayoutSpec(),
+//        ASLayoutSpec().styled{
+//          $0.minHeight = .init(unit: .points, value: 0)
+//          $0.flexShrink = 1.0
+//        }
+//      ])
   }
 }
 
@@ -162,25 +173,38 @@ extension ContentsNode {
 
 extension ContentsNode {
   private func contentsAreaLayoutSpec() -> ASLayoutSpec {
-    let contentLayout = ASStackLayoutSpec(
-      direction: .vertical,
-      spacing: .zero,
-      justifyContent: .start,
-      alignItems: .center,
-      children: [
-        ASRatioLayoutSpec(ratio: 1.0, child: self.imageNode).styled {
-          $0.maxWidth = .init(unit: .points, value: 100)
-        },
-        ASLayoutSpec().styled{ $0.minHeight = .init(unit: .points, value: const.spacing) },
-        titleNode,
-        subTitleNode,
-        ASLayoutSpec().styled{ $0.minHeight = .init(unit: .points, value: const.spacing) },
-        ASWrapperLayoutSpec(layoutElement: self.buttonNode).styled {
-          $0.minSize = .init(width: 200, height: 50)
-        }
-      ])
-
-    let contentsLayout = ASInsetLayoutSpec(insets: .init(top: 70, left: 0, bottom: 70, right: 0), child: contentLayout)
-    return ASBackgroundLayoutSpec(child: contentsLayout, background: backgroundNode)
+    LayoutSpec { [weak self] in
+      VStackLayout(alignItems: .center) {
+        self?.imageNode
+          .aspectRatio(1.0)
+          .maxWidth(const.minImageWidth)
+          .padding(.bottom, const.spacing)
+        self?.titleNode
+        self?.subTitleNode
+          .padding(.bottom, const.spacing)
+        self?.buttonNode
+          .minSize(const.minButtonSize)
+      }}
+//
+//    let contentLayout = ASStackLayoutSpec(
+//      direction: .vertical,
+//      spacing: .zero,
+//      justifyContent: .start,
+//      alignItems: .center,
+//      children: [
+//        ASRatioLayoutSpec(ratio: 1.0, child: self.imageNode).styled {
+//          $0.maxWidth = .init(unit: .points, value: 100)
+//        },
+//        ASLayoutSpec().styled{ $0.minHeight = .init(unit: .points, value: const.spacing) },
+//        titleNode,
+//        subTitleNode,
+//        ASLayoutSpec().styled{ $0.minHeight = .init(unit: .points, value: const.spacing) },
+//        ASWrapperLayoutSpec(layoutElement: self.buttonNode).styled {
+//          $0.minSize = .init(width: 200, height: 50)
+//        }
+//      ])
+//
+//    let contentsLayout = ASInsetLayoutSpec(insets: .init(top: 70, left: 0, bottom: 70, right: 0), child: contentLayout)
+//    return ASBackgroundLayoutSpec(child: contentsLayout, background: backgroundNode)
   }
 }
