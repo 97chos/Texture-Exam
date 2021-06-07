@@ -6,6 +6,7 @@ target 'TextureExam' do
   use_frameworks!
 
  pod 'Texture'
+ pod 'TextureSwiftSupport'
   # Pods for TextureExam
 
   target 'TextureExamTests' do
